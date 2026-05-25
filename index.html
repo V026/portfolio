@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koneti Trivikram Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="profile-container">
+
+<div class="profile">
+<img src="images/vic.png" alt="Profile Image">
+</div>
+
+</div>
+
+<p class="small">Hi,I'm</p>
+
+<h1 class="name">
+Koneti <span>Trivikram</span>
+</h1>
+
+<p class="typing">
+<span id="text"></span>
+</p>
+
+<a href="about.html">
+<button class="btn">About Me</button>
+<a href="resume.pdf" download>
+<button class="btn">Download Resume</button>
+</a>
+</a>
+
+</div>
+<script>
+
+const roles=[
+"Frontend Developer",
+"RF Engineer",
+"Embedded Engineer"
+];
+
+let index=0;
+let charIndex=0;
+
+function type(){
+
+let text=document.getElementById("text");
+
+if(charIndex<roles[index].length){
+
+text.innerHTML += roles[index].charAt(charIndex);
+
+charIndex++;
+
+setTimeout(type,100);
+
+}
+
+else{
+
+setTimeout(erase,1500);
+
+}
+
+}
+
+
+function erase(){
+
+let text=document.getElementById("text");
+
+if(charIndex>0){
+
+text.innerHTML=
+roles[index].substring(0,charIndex-1);
+
+charIndex--;
+
+setTimeout(erase,50);
+
+}
+
+else{
+
+index++;
+
+if(index>=roles.length){
+
+index=0;
+
+}
+
+setTimeout(type,300);
+
+}
+
+}
+
+type();
+
+</script>
+</body>
+<div class="particles"></div>
+<div class="cursor"></div>
+</html>
