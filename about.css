@@ -639,3 +639,46 @@ animation:moveParticles 15s linear infinite;
 transform:translateY(-100px);
 }
 }
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+nav{
+width:95%;
+gap:10px;
+padding:10px;
+overflow-x:auto;
+}
+
+nav button{
+font-size:14px;
+padding:8px;
+white-space:nowrap;
+}
+
+nav img{
+width:45px;
+height:45px;
+}
+
+.content{
+width:95%;
+padding:15px;
+}
+
+.tab{
+padding:20px;
+}
+
+.project-container,
+.edu-container,
+.work-container{
+flex-direction:column;
+align-items:center;
+}
+
+.project-card{
+width:90%;
+}
+
+}
