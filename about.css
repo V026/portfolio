@@ -751,3 +751,64 @@ transition:all 1s ease;
 opacity:1;
 transform:translateY(0);
 }
+.skill-box{
+width:80%;
+margin:auto;
+padding:20px;
+}
+
+.skill{
+margin:20px 0;
+}
+
+.skill p{
+color:white;
+margin-bottom:10px;
+font-weight:bold;
+}
+
+.progress{
+width:100%;
+height:12px;
+background:#222;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress span{
+display:block;
+height:100%;
+background:gold;
+border-radius:20px;
+}
+.stats-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.stat-card{
+width:180px;
+padding:20px;
+text-align:center;
+background:#111;
+border-radius:20px;
+box-shadow:0 0 15px rgba(255,215,0,.2);
+transition:0.5s;
+}
+
+.stat-card:hover{
+transform:translateY(-10px);
+}
+
+.stat-card h2{
+color:gold;
+font-size:30px;
+margin-bottom:10px;
+}
+
+.stat-card p{
+color:white;
+}
