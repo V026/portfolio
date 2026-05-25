@@ -741,3 +741,13 @@ border-radius:30px;
 font-weight:bold;
 cursor:pointer;
 }
+.fade{
+opacity:0;
+transform:translateY(30px);
+transition:all 1s ease;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}

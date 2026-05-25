@@ -433,6 +433,20 @@ RF Engineer | Embedded Engineer | Frontend Developer
 </p>
 
 </footer>
+<script>
+const observer = new IntersectionObserver((entries)=>{
+entries.forEach((entry)=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".tab").forEach((el)=>{
+el.classList.add("fade");
+observer.observe(el);
+});
+</script>
 </body>
 <div class="particles"></div>
 <div class="cursor"></div>
