@@ -293,7 +293,7 @@ GPA: 9
 <div class="project-container">
 
 <div class="project-card">
-<img src="images/mssxponders.png" alt="MSS Xponders">
+<img src="images/mss xponders.jpg" alt="MSS Xponders">
 
 <h3>MSS Xponders</h3>
 
@@ -303,10 +303,7 @@ GPA: 9
 Tech: RF Systems | Testing | Signal Analysis
 </p>
 
-<a href="#" class="project-btn">
-View Project
-</a>
-
+<a href="#" class="project-btn">View Project</a>
 </div>
 
 
@@ -321,10 +318,7 @@ View Project
 Tech: Satellite Communication | Embedded Systems
 </p>
 
-<a href="#" class="project-btn">
-View Project
-</a>
-
+<a href="#" class="project-btn">View Project</a>
 </div>
 
 
@@ -339,15 +333,12 @@ View Project
 Tech: HTML | CSS | JavaScript
 </p>
 
-<a href="https://v026.github.io/portfolio" class="project-btn">
-View Project
-</a>
-
+<a href="#" class="project-btn">View Project</a>
 </div>
 
 
 <div class="project-card">
-<img src="images/rtis.png" alt="RTIS">
+<img src="images/rtis.jpg" alt="RTIS">
 
 <h3>RTIS</h3>
 
@@ -357,33 +348,41 @@ View Project
 Tech: RF | Embedded Systems | Monitoring
 </p>
 
-<a href="#" class="project-btn">
-View Project
-</a>
-
+<a href="#" class="project-btn">View Project</a>
 </div>
 
 </div>
 
+</div>
 
+
+<!-- CONTACT -->
 <div id="contact" class="tab">
+    
 
 <h1>Contact Me</h1>
 
-<div class="contact-box">
+<div class="contact-form">
 
 <h2>Hire Me</h2>
 
 <p>Interested in RF, Embedded Systems or Frontend projects? Contact me.</p>
 
 <form>
-<input type="text" placeholder="Your Name" required>
 
-<input type="email" placeholder="Your Email" required>
+<input type="text"
+placeholder="Your Name"
+required>
 
-<textarea placeholder="Your Message"></textarea>
+<input type="email"
+placeholder="Your Email"
+required>
 
-<button type="submit" class="btn">
+<textarea
+placeholder="Your Message"
+required></textarea>
+
+<button type="submit" class="send-btn">
 Send Message
 </button>
 
@@ -394,6 +393,7 @@ Send Message
 </div>
 
 
+<!-- SOCIAL -->
 
 <div id="social" class="tab">
 
@@ -401,32 +401,74 @@ Send Message
 
 <div class="social-box">
 
-<a href="https://www.linkedin.com/in/koneti-trivikram-69aaa2173" target="_blank">
-LinkedIn
-</a>
+<a href="https://www.linkedin.com/in/koneti-trivikram-69aaa2173"
+target="_blank">LinkedIn</a><br><br>
 
-<a href="https://github.com/V026" target="_blank">
-GitHub
-</a>
 
-<a href="https://www.youtube.com/@MrVTelugu" target="_blank">
-YouTube
-</a>
+<a href="https://github.com/V026"
+target="_blank">GitHub</a><br><br>
+
+
+<a href="https://www.youtube.com/@MrVTelugu"
+target="_blank">YouTube</a><br><br>
+
+</div>
 
 </div>
 
 </div>
+<!-- content ends -->
+
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+
+<h3>Koneti Trivikram</h3>
+
+<p>
+RF Engineer | Embedded Engineer | Frontend Developer
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+<p><a href="#summary">Summary</a></p>
+<p><a href="#projects">Projects</a></p>
+<p><a href="#skills">Skills</a></p>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📧 koneti.vicky@gmail.com</p>
+
+<p>📍 Visakhapatnam</p>
+
+</div>
+
+</div>
+
+</footer>
 
 
 <script>
 
-let tabs=document.querySelectorAll(".tab");
-let buttons=document.querySelectorAll("nav button");
+const tabs=document.querySelectorAll(".tab");
+const buttons=document.querySelectorAll("nav button");
 
 tabs.forEach((tab,index)=>{
 
 if(index!==0){
+
 tab.style.display="none";
+
 }
 
 });
@@ -445,68 +487,30 @@ btn.classList.remove("active");
 
 });
 
-document.getElementById(tabId).style.display="block";
+document.getElementById(tabId)
+.style.display="block";
 
-event.target.classList.add("active");
+buttons.forEach(btn=>{
+
+if(
+btn.getAttribute("onclick")
+&&
+btn.getAttribute("onclick")
+.includes(tabId)
+){
+
+btn.classList.add("active");
+
+}
+
+});
 
 }
 
 </script>
-<footer>
 
-<div class="footer-content">
-
-<div>
-
-<h3>Koneti Trivikram</h3>
-
-<p>
-RF Engineer | Embedded Engineer | Frontend Developer
-</p>
-
-</div>
-
-
-<div>
-
-<h3>Quick Links</h3>
-
-<p>Summary</p>
-<p>Projects</p>
-<p>Skills</p>
-
-</div>
-
-
-<div>
-
-<h3>Contact</h3>
-
-<p>📧 koneti.vicky@gmail.com</p>
-
-<p>📍 Visakhapatnam</p>
-
-</div>
-
-</div>
-
-</footer>
-<script>
-const observer = new IntersectionObserver((entries)=>{
-entries.forEach((entry)=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show");
-}
-});
-});
-
-document.querySelectorAll(".tab").forEach((el)=>{
-el.classList.add("fade");
-observer.observe(el);
-});
-</script>
-</body>
-</body>
 <div class="particles"></div>
 <div class="cursor"></div>
+
+</body>
 </html>
