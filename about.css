@@ -682,3 +682,24 @@ width:90%;
 }
 
 }
+@media(max-width:768px){
+
+.social-links{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+}
+
+.social-links a{
+    width:80%;
+    text-align:center;
+}
+
+.social-container{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
+
+}
