@@ -413,3 +413,30 @@ transform:translateY(-100px);
     color:#999;
     border-top:1px solid rgba(255,255,255,0.1);
 }
+.social-links{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:30px;
+}
+
+.social-links a{
+width:55px;
+height:55px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:25px;
+border:2px solid #ffcc00;
+border-radius:50%;
+color:#ffcc00;
+text-decoration:none;
+transition:0.4s;
+}
+
+.social-links a:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px #ffcc00;
+background:#ffcc00;
+color:black;
+}
